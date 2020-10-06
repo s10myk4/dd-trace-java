@@ -34,7 +34,7 @@ import net.bytebuddy.matcher.ElementMatcher;
 public final class JavaForkJoinTaskInstrumentation extends Instrumenter.Default {
 
   public JavaForkJoinTaskInstrumentation() {
-    super(AbstractExecutorInstrumentation.EXEC_NAME);
+    super("java_concurrent", "fork-join-task");
   }
 
   @Override
